@@ -1,29 +1,34 @@
-﻿/* pirveli sashinao davaleba
- * 
- */
-
-class Homework
+﻿class Homework2
 {
     static void Main(string[] args)
     {
-        //misalmeba
-        Console.WriteLine("Hello Mr. Archil");
-        Console.WriteLine("How are you?");
+        //Davaleba #1
+        Console.Write("Gtxovt sheiyvanot pirveli ricxvi: ");
+        int x = Int32.Parse(Console.ReadLine());
+        Console.Write("Gtxovt sheiyvanot meore ricxvi: ");
+        int y = Int32.Parse(Console.ReadLine());
+        Console.Write("Gtxovt sheiyvanot mesame ricxvi: ");
+        int z = Int32.Parse(Console.ReadLine());
+        Console.WriteLine();
+        Console.Write("Migebuli shedegi: ");
+        Console.WriteLine(x+y*z);
 
-        //about
-        Console.WriteLine("Gtxovt ixilot chemi sashinao davaleba #1");
-        Console.WriteLine("...");
+        Console.WriteLine();
 
-        //comment
-        Console.WriteLine("warmatebebi");
-        Console.WriteLine("...");
-    }
-
-    /// <summary>
-    /// es kodi ar igebs monawileobas
-    /// </summary>
-    static void regularMethod()
-    {
-        Console.WriteLine("We Are Junior Developers");
+        //Davaleba #2
+        Console.Write("Gtxovt sheiyvanot tqveni saxeli: ");
+        string saxeli = Console.ReadLine();
+        Console.Write("Gtxovt sheiyvanot tqveni gvari: ");
+        string gvari = Console.ReadLine();
+        Console.Write("Gtxovt sheiyvanot tqveni asaki: ");
+        int asaki = Int32.Parse(Console.ReadLine());
+        Console.Write("Gtxovt sheiyvanot tqveni simagle (cm): ");
+        int simagle = Int32.Parse(Console.ReadLine());
+        Console.Write("Gtxovt sheiyvanot tqveni wona (kg): ");
+        int wona = Int32.Parse(Console.ReadLine());
+        Console.WriteLine();
+        Console.Write("Tqveni monacemebi: ");
+        Console.WriteLine(saxeli + " " + gvari + "," + " " + asaki +"wlis" + "," + " " + simagle + "cm" + "," + " " + wona + "kg");
     }
 }
+
