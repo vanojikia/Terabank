@@ -2,7 +2,10 @@
 {
     static void Main(string[] args)
     {
-        //Davaleba #1
+        //Davaleba #1. შევქმნათ სამი ცვლადი (x, z, y).
+        //მივანიჭოთ მნიშვნელობები.
+        //გამოვიყვანოთ კონსოლში: x+z * y = ჯამი; მაგ. 4, 5, 10 - ის შედეგია 54.
+
         Console.Write("Please, enter the first number (X): ");
         int x = Int32.Parse(Console.ReadLine());
         Console.Write("Please, enter a second number (Y): ");
@@ -16,7 +19,10 @@
         Console.WriteLine();
 
 
-        //Davaleba #2
+        //Davaleba #2. პროგრამა სთავაზობს მომხმარებელს შეიყვანოს სახელი (Archil), გვარი(Sikharulidze), ასაკი(34), სიმაღლე(171) და წონა(88.7).
+        //შევინახოთ ეს მონაცემები შესაბამისი ტიპის ცვლადებში.
+        //გამოვიყვანოთ მთელი ინფორმაცია კონსოლში.
+
         Console.Write("Please, enter your name: ");
         string firstname = Console.ReadLine();
         Console.Write("Please, enter your surname: ");
@@ -34,7 +40,10 @@
         Console.WriteLine();
 
 
-        //Davaleba #3
+        //Davaleba #3. დაწერეთ კოდი, რომელიც ითვლის ადამიანის BMI (Body Mass Index).
+        //მოიძიეთ ფორმულა ინტერნეტში.
+        //ლოგიკა და კოდი დამოუკიდებლად გაწერეთ.
+
         Console.Write("Please, enter your weight (kg): ");
         double weight2 = double.Parse(Console.ReadLine());
         Console.Write("Please, enter your height (m): ");
@@ -46,7 +55,8 @@
         Console.WriteLine();
 
 
-        //Davaleba #4
+        //Davaleba #4. დამიხატეთ კონსოლში შემდეგი ნახატი.
+
         string vertical = "|";
         string horizontal = "---";
         Console.WriteLine();
