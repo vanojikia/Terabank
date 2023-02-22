@@ -3,45 +3,45 @@
     static void Main(string[] args)
     {
         //Davaleba #1
-        Console.Write("Gtxovt sheiyvanot pirveli ricxvi (X): ");
+        Console.Write("Please, enter the first number (X): ");
         int x = Int32.Parse(Console.ReadLine());
-        Console.Write("Gtxovt sheiyvanot meore ricxvi (Y): ");
+        Console.Write("Please, enter a second number (Y): ");
         int y = Int32.Parse(Console.ReadLine());
-        Console.Write("Gtxovt sheiyvanot mesame ricxvi (Z): ");
+        Console.Write("Please, enter the third number (Z): ");
         int z = Int32.Parse(Console.ReadLine());
         Console.WriteLine();
-        Console.Write("Migebuli shedegi (X+Z*Y)= ");
+        Console.Write("Result (X+Z*Y)= ");
         Console.WriteLine(x+z*y);
         Console.WriteLine();
         Console.WriteLine();
 
 
         //Davaleba #2
-        Console.Write("Gtxovt sheiyvanot tqveni saxeli: ");
-        string saxeli = Console.ReadLine();
-        Console.Write("Gtxovt sheiyvanot tqveni gvari: ");
-        string gvari = Console.ReadLine();
-        Console.Write("Gtxovt sheiyvanot tqveni asaki: ");
-        int asaki = Int32.Parse(Console.ReadLine());
-        Console.Write("Gtxovt sheiyvanot tqveni simagle (m): ");
-        float simagle = float.Parse(Console.ReadLine());
-        Console.Write("Gtxovt sheiyvanot tqveni wona (kg): ");
-        float wona = float.Parse(Console.ReadLine());
+        Console.Write("Please, enter your name: ");
+        string firstname = Console.ReadLine();
+        Console.Write("Please, enter your surname: ");
+        string surname = Console.ReadLine();
+        Console.Write("Please, enter your age: ");
+        int age = Int32.Parse(Console.ReadLine());
+        Console.Write("Please, enter your height (cm): ");
+        int height = int.Parse(Console.ReadLine());
+        Console.Write("Please, enter your weight (kg): ");
+        double weight = double.Parse(Console.ReadLine());
         Console.WriteLine();
-        Console.Write("Tqveni monacemebi: ");
-        Console.WriteLine(saxeli + " " + gvari + "," + " " + asaki +"wlis" + "," + " " + simagle + "cm" + "," + " " + wona + "kg");
+        Console.Write("Result: ");
+        Console.WriteLine(firstname + " " + surname + "," + " " + age +"wlis" + "," + " " + height + "cm" + "," + " " + weight + "kg");
         Console.WriteLine();
         Console.WriteLine();
 
 
         //Davaleba #3
-        Console.Write("Gtxovt sheiyvanot tqveni wona (kg): ");
-        float weight = float.Parse(Console.ReadLine());
-        Console.Write("Gtxovt sheiyvanot tqveni simagle (m): ");
-        float height = float.Parse(Console.ReadLine());
-        float bmi = weight / (height * height);
+        Console.Write("Please, enter your weight (kg): ");
+        double weight2 = double.Parse(Console.ReadLine());
+        Console.Write("Please, enter your height (m): ");
+        double height2 = double.Parse(Console.ReadLine());
+        double bmi = weight2 / (height2 * height2);
         Console.WriteLine();
-        Console.WriteLine("Tqveni BMI (kg/m2) aris: " + bmi);
+        Console.WriteLine("Your BMI Result (kg/m2): " + bmi);
         Console.WriteLine();
         Console.WriteLine();
 
