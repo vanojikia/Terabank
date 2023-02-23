@@ -1,4 +1,4 @@
-﻿class Davaleba3
+﻿class Homework3
 {
     static void Main(string[] args)
     {
@@ -22,7 +22,7 @@
 
         Numbers(num1, num2, num3, num4);
 
-        //1. მეთოდი, რომელსაც გადავცემთ ხილის სახელებს.
+        //3. მეთოდი, რომელსაც გადავცემთ ხილის სახელებს.
         Console.WriteLine();
         Fruits();
     }
