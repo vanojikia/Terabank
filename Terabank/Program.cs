@@ -45,19 +45,19 @@
 
     static void Numbers(double num1, double num2, double num3, double num4)
     {
-        if (num1 > num2 && num1 > num3 && num1 > num4)
+        if (num1 >= num2 && num1 >= num3 && num1 >= num4)
         {
             Console.WriteLine("The largest number is: " + num1);
         }
-        else if (num2 > num1 && num2 > num3 && num2 > num4)
+        else if (num2 >= num1 && num2 >= num3 && num2 >= num4)
         {
             Console.WriteLine("The largest number is: " + num2);
         }
-        else if (num3 > num1 && num3 > num2 && num3 > num4)
+        else if (num3 >= num1 && num3 >= num2 && num3 >= num4)
         {
             Console.WriteLine("The largest number is:" + num3);
         }
-        else if (num4 > num1 && num4 > num2 && num4 > num3)
+        else if (num4 >= num1 && num4 >= num2 && num4 >= num3)
         {
             Console.WriteLine("The largest number is: " + num4);
         }
@@ -67,19 +67,19 @@
         }
 
 
-        if (num1 < num2 && num1 < num3 && num1 < num4)
+        if (num1 <= num2 && num1 <= num3 && num1 <= num4)
         {
             Console.WriteLine("The smallest number is: " + num1);
         }
-        else if (num2 < num1 && num2 < num3 && num2 < num4)
+        else if (num2 <= num1 && num2 <= num3 && num2 <= num4)
         {
             Console.WriteLine("The smallest number is: " + num2);
         }
-        else if (num3 < num1 && num3 < num2 && num3 < num4)
+        else if (num3 <= num1 && num3 <= num2 && num3 <= num4)
         {
             Console.WriteLine("The smallest number is:" + num3);
         }
-        else if (num4 < num1 && num4 < num2 && num4 < num3)
+        else if (num4 <= num1 && num4 <= num2 && num4 <= num3)
         {
             Console.WriteLine("The smallest number is: " + num4);
         }
