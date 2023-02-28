@@ -13,11 +13,7 @@
 
 {
     static void Main(string[] args)
-
     {
-        startGame();
-        tries();
-    }
 
     /// <summary>
     /// თამაშის დაწყება
