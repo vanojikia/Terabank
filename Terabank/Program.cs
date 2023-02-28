@@ -1,4 +1,4 @@
-﻿class Homework2
+class Homework2
 {
     static void Main(string[] args)
     {
@@ -14,7 +14,7 @@
         int z = Int32.Parse(Console.ReadLine());
         Console.WriteLine();
         Console.Write("Result (X+Z*Y)= ");
-        Console.WriteLine(x+z*y);
+        Console.WriteLine(x + z * y);
         Console.WriteLine();
         Console.WriteLine();
 
@@ -35,7 +35,7 @@
         double weight = double.Parse(Console.ReadLine());
         Console.WriteLine();
         Console.Write("Result: ");
-        Console.WriteLine(firstname + " " + surname + "," + " " + age +"wlis" + "," + " " + height + "cm" + "," + " " + weight + "kg");
+        Console.WriteLine(firstname + " " + surname + "," + " " + age + "wlis" + "," + " " + height + "cm" + "," + " " + weight + "kg");
         Console.WriteLine();
         Console.WriteLine();
 
@@ -48,7 +48,7 @@
         double weight2 = double.Parse(Console.ReadLine());
         Console.Write("Please, enter your height (m): ");
         double height2 = double.Parse(Console.ReadLine());
-        double bmi = weight2 / (height2 * height2);
+        double bmi = weight2 / (height2 / 100 * height2 / 100);
         Console.WriteLine();
         Console.WriteLine("Your BMI Result (kg/m2): " + bmi);
         Console.WriteLine();
@@ -70,4 +70,3 @@
         Console.WriteLine(" " + " " + " " + vertical + " " + " " + " " + vertical);
     }
 }
-
