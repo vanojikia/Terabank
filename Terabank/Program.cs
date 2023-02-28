@@ -45,7 +45,7 @@
     static void Instruction()
     {
         Console.Write("Game instruction: ");
-        Console.WriteLine("I have a hidden number between 0 to 20 for you.")
+        Console.WriteLine("I have a hidden number between 0 to 20 for you.");
         Console.WriteLine("Your task is to guess the number.");
         Console.WriteLine("You have 3 attempts.");
     }
