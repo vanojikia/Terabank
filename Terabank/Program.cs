@@ -1,4 +1,4 @@
-﻿class Homework2
+class Homework2
 {
     static void Main(string[] args)
     {
@@ -14,7 +14,7 @@
         int z = Int32.Parse(Console.ReadLine());
         Console.WriteLine();
         Console.Write("Result (X+Z*Y)= ");
-        Console.WriteLine(x+z*y);
+        Console.WriteLine(x + z * y);
         Console.WriteLine();
         Console.WriteLine();
 
@@ -35,7 +35,7 @@
         double weight = double.Parse(Console.ReadLine());
         Console.WriteLine();
         Console.Write("Result: ");
-        Console.WriteLine(firstname + " " + surname + "," + " " + age +"wlis" + "," + " " + height + "cm" + "," + " " + weight + "kg");
+        Console.WriteLine(firstname + " " + surname + "," + " " + age + "wlis" + "," + " " + height + "cm" + "," + " " + weight + "kg");
         Console.WriteLine();
         Console.WriteLine();
 
@@ -70,4 +70,3 @@
         Console.WriteLine(" " + " " + " " + vertical + " " + " " + " " + vertical);
     }
 }
-
