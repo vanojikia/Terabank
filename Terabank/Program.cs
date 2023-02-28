@@ -48,7 +48,7 @@
         double weight2 = double.Parse(Console.ReadLine());
         Console.Write("Please, enter your height (m): ");
         double height2 = double.Parse(Console.ReadLine());
-        double bmi = weight2 / (height2 * height2);
+        double bmi = weight2 / (height2 / 100 * height2 / 100);
         Console.WriteLine();
         Console.WriteLine("Your BMI Result (kg/m2): " + bmi);
         Console.WriteLine();
