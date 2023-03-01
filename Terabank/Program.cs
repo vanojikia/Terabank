@@ -12,22 +12,16 @@
  */
 
 {
+
     static void Main(string[] args)
     {
-
-    /// <summary>
-    /// თამაშის დაწყება
-    /// </summary>
     static void startGame()
     {
         Welcome();
         tries();
     }
-
-    /// <summary>
-    /// მისალმება
-    /// </summary>
-    static void Welcome ()
+    }
+        static void Welcome()
     {
         Console.WriteLine("Hello, let's play a game...");
         Console.WriteLine();
@@ -36,10 +30,8 @@
         Instruction();
     }
 
-    /// <summary>
-    /// თამაშის ინსტრუქცია
-    /// </summary>
-    static void Instruction ()
+
+        static void Instruction()
     {
         Console.Write("Game rules: ");
         Console.WriteLine("I have a hidden number for you.");
@@ -49,18 +41,12 @@
     }
 
     
-    /// <summary>
-    /// რენდომ რიცხვის გამოძახება
-    /// </summary>
-    static int randomNumber ()
+        static int randomNumber()
     {
         return new Random().Next(0, 21);
     }
 
 
-    /// <summary>
-    /// მომხმარებელს შეყავს რიცხვი
-    /// </summary>
     static int enterNumb()
     {
         Console.WriteLine();
@@ -69,9 +55,6 @@
     }
 
     
-    /// <summary>
-    /// მცდელობები
-    /// </summary>
     static void tries()
     {
         int retries = 0;
