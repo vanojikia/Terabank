@@ -1,6 +1,7 @@
 ﻿class Homework4
+{
 
-/* დავწეროთ პროგრამა, რომელიც ჩაიფიქრებს რიცხვს 0-დან 20-ს ჩათვლით.
+    /* დავწეროთ პროგრამა, რომელიც ჩაიფიქრებს რიცხვს 0-დან 20-ს ჩათვლით.
  * მომხმარებელმა უნდა გამოიცნოს ეს რიცხვი. მას აქვს სამი ცდა.
  * სამი ცდის შემდეგ, თუ რიცხვი ვერ გამოიცნო - წაგება, თუ რიცხვი გამოიცნო - მოგება.
  * გააგრძელოთ თამაშის დაწერა და დაასრულოთ. კერძოდ, მომხმარებელს უნდა ჰქონდეს შესაძლებლობა,
@@ -10,18 +11,25 @@
  * მომხმარებელმა ხელახლა დაიწყოს თამაში.
  * ეს ყველაფერი კეთდება ციკლების მეშვეობით. კერძოდ, დაგჭირდებათ ორი ციკლი.
  */
-
-{
-
     static void Main(string[] args)
     {
+        startGame();
+    }
+
+    /// <summary>
+    /// ამ მეთოდით ხდება თამაშის დაწყება
+    /// </summary>
     static void startGame()
     {
         Welcome();
         tries();
     }
-    }
-        static void Welcome()
+
+
+    /// <summary>
+    /// ამ მეთოდით მომხმარებელს გამოსდის საინფორმაციო შეტყობინება
+    /// </summary>
+    static void Welcome()
     {
         Console.WriteLine("Hello, let's play a game...");
         Console.WriteLine();
@@ -31,7 +39,10 @@
     }
 
 
-        static void Instruction()
+    /// <summary>
+    /// ამ მეთოდით მომხმარებელს გამოსდის ინსტრუქცია
+    /// </summary>
+    static void Instruction()
     {
         Console.Write("Game rules: ");
         Console.WriteLine("I have a hidden number for you.");
@@ -40,13 +51,19 @@
         Console.WriteLine("You have 3 attempts.");
     }
 
-    
-        static int randomNumber()
+
+    /// <summary>
+    /// ამ მეთოდით ხდება რენდომ რიცხვების დაგენერირება
+    /// </summary
+    static int randomNumber()
     {
         return new Random().Next(0, 21);
     }
 
 
+    /// <summary>
+    /// ამ მეთოდით ხდება მომხმარებლის მიერ რიცხვის შეყვანა
+    /// </summary
     static int enterNumb()
     {
         Console.WriteLine();
@@ -54,7 +71,10 @@
         return Int32.Parse(Console.ReadLine());
     }
 
-    
+
+    /// <summary>
+    /// თამაში
+    /// </summary>
     static void tries()
     {
         int retries = 0;
@@ -81,7 +101,5 @@
         {
             return;
         }
-
     }
 }
-
