@@ -1,6 +1,6 @@
-﻿class Homework4
-
-/* დავწეროთ პროგრამა, რომელიც ჩაიფიქრებს რიცხვს 0-დან 20-ს ჩათვლით.
+﻿class HomeWork4
+{
+    /* დავწეროთ პროგრამა, რომელიც ჩაიფიქრებს რიცხვს 0-დან 20-ს ჩათვლით.
  * მომხმარებელმა უნდა გამოიცნოს ეს რიცხვი. მას აქვს სამი ცდა.
  * სამი ცდის შემდეგ, თუ რიცხვი ვერ გამოიცნო - წაგება, თუ რიცხვი გამოიცნო - მოგება.
  * გააგრძელოთ თამაშის დაწერა და დაასრულოთ. კერძოდ, მომხმარებელს უნდა ჰქონდეს შესაძლებლობა,
@@ -11,22 +11,28 @@
  * ეს ყველაფერი კეთდება ციკლების მეშვეობით. კერძოდ, დაგჭირდებათ ორი ციკლი.
  */
 
-{
     static void Main(string[] args)
     {
+        //ამ მეთოდით ხდება მთავარი ლოგიკის გამოძახება
+        StartGame();
 
-    /// <summary>
-    /// თამაშის დაწყება
-    /// </summary>
-    static void startGame()
-    {
-        Welcome();
     }
 
+
     /// <summary>
-    /// მისალმება
+    /// ამ მეთოდით ხდება თამაშის დაწყება
     /// </summary>
-    static void Welcome ()
+    static void StartGame()
+    {
+        Welcome();
+        tries();
+    }
+
+
+    /// <summary>
+    /// ამ მეთოდით ხდება მისალმება
+    /// </summary>
+    static void Welcome()
     {
         Console.WriteLine("Hello, let's play a game...");
         Console.WriteLine();
@@ -35,10 +41,11 @@
         Instruction();
     }
 
+
     /// <summary>
-    /// თამაშის ინსტრუქცია
+    /// ამ მეთოდით მომხმარებელს გამოსდის ინსტრუქცია
     /// </summary>
-    static void Instruction ()
+    static void Instruction()
     {
         Console.Write("Game rules: ");
         Console.WriteLine("I have a hidden number for you.");
@@ -47,19 +54,21 @@
         Console.WriteLine("You have 3 attempts.");
     }
 
-    
+
     /// <summary>
-    /// რენდომ რიცხვის გამოძახება
+    /// ამ მეთოდით ხდება რენდომ რიცხვების შექმნა
     /// </summary>
-    static int randomNumber ()
+    /// <returns></returns>
+    static int randomNumber()
     {
         return new Random().Next(0, 21);
     }
 
 
     /// <summary>
-    /// მომხმარებელს შეყავს რიცხვი
+    /// ამ მეთოდით მომხმარებელს შეყავს რიცხვი
     /// </summary>
+    /// <returns></returns>
     static int enterNumb()
     {
         Console.WriteLine();
@@ -67,14 +76,15 @@
         return Int32.Parse(Console.ReadLine());
     }
 
-    
+
+
     /// <summary>
-    /// მცდელობები
+    /// თამაში
     /// </summary>
     static void tries()
     {
         int retries = 0;
-        while (retries < 3 )
+        while (retries < 3)
         {
             retries++;
             int randomNumb = randomNumber();
@@ -86,17 +96,17 @@
                 return;
             }
         }
-        Console.WriteLine() ;
+        Console.WriteLine();
         Console.WriteLine("Yo have Lose, Do you want to continue game? Y or N");
         string retrygame = Console.ReadLine();
         if (retrygame == "Y")
         {
             tries();
-        }else
+        }
+        else
         {
             return;
         }
 
     }
 }
-
