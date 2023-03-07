@@ -14,6 +14,7 @@
     static void Main(string[] args)
     {
         startGame();
+        tries();
     }
 
     /// <summary>
@@ -22,7 +23,6 @@
     static void startGame()
     {
         Welcome();
-        tries();
     }
 
 
@@ -59,8 +59,6 @@
     {
         return new Random().Next(0, 21);
     }
-
-
     /// <summary>
     /// ამ მეთოდით ხდება მომხმარებლის მიერ რიცხვის შეყვანა
     /// </summary
@@ -70,26 +68,30 @@
         Console.Write("Enter a Number: ");
         return Int32.Parse(Console.ReadLine());
     }
-
-
     /// <summary>
     /// თამაში
     /// </summary>
     static void tries()
     {
         int retries = 0;
+        int randomNumb = randomNumber();
         while (retries < 3)
         {
             retries++;
-            int randomNumb = randomNumber();
             int enterNumber = enterNumb();
-            Console.WriteLine("Right number is: " + randomNumb);
             if (randomNumb == enterNumber)
             {
-                Console.WriteLine("You have WON !");
+                Console.WriteLine("Right number is: " + randomNumb + " You have WON !");
                 return;
+            }else if (randomNumb < enterNumber)
+            {
+                Console.WriteLine("Entered number is higher" + randomNumb);
+            }else if (randomNumb > enterNumber)
+            {
+                Console.WriteLine("Entered number is lower" + randomNumb);
             }
         }
+
         Console.WriteLine();
         Console.WriteLine("Yo have Lose, Do you want to continue game? Y or N");
         string retrygame = Console.ReadLine();
