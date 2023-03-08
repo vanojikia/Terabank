@@ -85,10 +85,10 @@
                 return;
             }else if (randomNumb < enterNumber)
             {
-                Console.WriteLine("Entered number is higher" + randomNumb);
+                Console.WriteLine("Entered number is higher");
             }else if (randomNumb > enterNumber)
             {
-                Console.WriteLine("Entered number is lower" + randomNumb);
+                Console.WriteLine("Entered number is lower");
             }
             else if (randomNumb < enterNumber)
             {
