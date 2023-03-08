@@ -83,6 +83,12 @@
             {
                 Console.WriteLine("Right number is: " + randomNumb + " You have WON !");
                 return;
+            }else if (randomNumb < enterNumber)
+            {
+                Console.WriteLine("Entered number is higher" + randomNumb);
+            }else if (randomNumb > enterNumber)
+            {
+                Console.WriteLine("Entered number is lower" + randomNumb);
             }
             else if (randomNumb < enterNumber)
             {
